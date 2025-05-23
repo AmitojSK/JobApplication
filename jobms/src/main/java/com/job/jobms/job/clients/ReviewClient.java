@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.job.jobms.job.external.Review;
 
-@FeignClient(name = "REVIEWYMS")
+@FeignClient(name = "REVIEWMS")
 public interface ReviewClient {
 	
-	@GetMapping(name = "/reviews")
+	@GetMapping("/reviews")
 	List<Review> getReviews(@RequestParam("companyId") Long id);
 
 }
