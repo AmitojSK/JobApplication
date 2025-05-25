@@ -16,4 +16,4 @@ spec:
       - name: zipkin
         image: openzipkin/zipkin
         ports:
-        - containers: 9411
+        - containerPort: 9411
