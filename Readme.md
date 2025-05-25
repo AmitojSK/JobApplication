@@ -49,7 +49,6 @@ This repository contains a set of microservices for a job application platform, 
 
 Each microservice can be started individually using Maven:
 
-```sh
 cd companyms
 ./mvnw spring-boot:run
 
