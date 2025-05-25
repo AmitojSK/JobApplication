@@ -1,0 +1,9 @@
+mvnw spring-boot:build-image "-Dspring-boot.build-image.imageName=unstackingtech/companyms"
+
+kubectl apply -f d:\Projects\JobApplication\k8s\system\coredns.yaml
+
+kubectl exec -it postgres-0 -- psql -U admin -d postgres
+
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public';
